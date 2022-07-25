@@ -30,9 +30,11 @@ def lambda_handler(event, context):
     data=[]
     player=[]
     length=0
-    print(event['start'])
-    start= event['start']
-    end = event['end']
+    #print(event['start'])
+    #start= event['start']
+    #end = event['end'] #starting time
+    start = 20220719
+    end = 20220721
     data=importFromURL(data,start,end)
 
     length = int(data["transaction_all"]["queryResults"]["totalSize"])
