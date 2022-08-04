@@ -33,8 +33,8 @@ def lambda_handler(event, context):
     #print(event['start'])
     #start= event['start']
     #end = event['end'] #starting time
-    start = 20220719
-    end = 20220721
+    start = 20220801
+    end = 20220804
     data=importFromURL(data,start,end)
 
     length = int(data["transaction_all"]["queryResults"]["totalSize"])
