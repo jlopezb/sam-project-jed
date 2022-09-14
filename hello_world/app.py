@@ -1,3 +1,5 @@
+#Check if this is the working app?
+
 import json
 #import calc
 import requests
@@ -33,8 +35,8 @@ def lambda_handler(event, context):
     #print(event['start'])
     #start= event['start']
     #end = event['end'] #starting time
-    start = 20220801
-    end = 20220804
+    start = 20220804
+    end = 20220807
     data=importFromURL(data,start,end)
 
     length = int(data["transaction_all"]["queryResults"]["totalSize"])
